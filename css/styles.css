@@ -350,6 +350,141 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--maintextcolor);
+  align-self: flex-start;
+  margin-left: 40px;
+}
+
+.modal-content {
+  display: flex;
+  align-self: flex-start;
+  padding-left: 40px;
+  padding-top: 12px;
+  width: 480px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.form-element {
+  position: relative;
+}
+
+.form-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  color: var(--secondarytextcolor);
+  padding-bottom: 4px;
+}
+
+.form-item input,
+.form-item textarea {
+  padding: 8px;
+  padding-left: 30px;
+  background: transparent;
+  border: solid 1px var(--customers-icons-color);
+  border-radius: 4px;
+}
+
+.form-item svg {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-10%);
+  z-index: 5;
+}
+
+.form-button {
+  width: 200px;
+  height: 50px;
+  align-self: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--whitetextcolor);
+  border-radius: 4px;
+  border: none;
+  background-color: var(--hovercolor);
+  align-items: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.form-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--secondarytextcolor);
+}
+
+/* checkhbox */
+.form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.form-checkbox {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--blacktextcolor);
+}
+
+.form-link {
+  color: var(--hovercolor);
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+/* hovers */
+.form-item:hover,
+.form-svg:hover,
+.form-item:focus,
+.form-svg:focus,
+.form-item:active,
+.form-svg:active {
+  color: var(--hovercolor);
+  border-color: var(--hovercolor);
+  fill: var(--hovercolor);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+/* Making name attribute 0f input not change color on hover */
+.form-item-text,
+.form-item-text:hover,
+.form-item-text:focus,
+.form-item-text:active {
+  color: var(--secondarytextcolor);
+}
+
 /* Our values section */
 .values-wrapper {
   display: flex;

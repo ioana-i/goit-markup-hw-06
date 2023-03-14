@@ -29,34 +29,34 @@
           <div class="form-element">
             <label class="form-item">
               <p class="form-item-text">Name</p>
+              <input type="text" name="name" class="form-input">
               <svg class="form-svg" width="12" height="12">
                 <use href="./images/icons.svg#icon-account"></use>
               </svg>
-              <input type="text" name="name" class="form-item">
             </label>
           </div>
           <div class="form-element">
             <label class="form-item">
               <p class="form-item-text">Telephone</p>
-              <svg width="13" height="13">
+              <input type="tel" name="phone_number" class="form-input">
+              <svg class="form-svg" width="13" height="13">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
-              <input type="tel" name="phone_number" class="form-item">
             </label>
           </div>
           <div class="form-element">
             <label class="form-item">
               <p class="form-item-text">E-mail</p>
-              <svg width="15" height="12">
+              <input type="email" name="email" class="form-input">
+              <svg class="form-svg" width="15" height="12">
                 <use href="./images/icons.svg#icon-envelope-2"></use>
               </svg>
-              <input type="email" name="email" class="form-item">
             </label>
           </div>
           <div class="form-element">
             <label class="form-item">
               <p class="form-item-text">Comments</p>
-              <textarea name="comments" rows="8" placeholder="Enter the text" class="form-item"></textarea>
+              <textarea name="comments" rows="8" placeholder="Enter the text" class="form-input"></textarea>
             </label>
           </div>
           <label class="form-agreement">
@@ -417,7 +417,8 @@
         <div class="form-all">
           <input type="email" name="email" id="email" class="form-input" placeholder="E-mail">
           <label for="email" class="form-label"></label>
-          <button class="form-button" type="submit">Subscribe
+          <button class="form-button" type="submit">
+            <p class="subscribe-btn-text">Subscribe</p>
             <svg class="form-icon">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
